@@ -32,6 +32,9 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox' 
 Plug 'andweeb/presence.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'mbbill/undotree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 "Plug 'preservim/nerdtree'
 call plug#end()
 
@@ -54,6 +57,7 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 "require'lspconfig'.pyright.setup{}
 "EOF
 "
+let g:airline_powerline_fonts=1
 lua << EOF
 require'lspconfig'.clangd.setup{}
 EOF
