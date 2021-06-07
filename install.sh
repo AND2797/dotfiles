@@ -8,7 +8,7 @@ mkdir -p $olddir
 cd $dir
 
 for file in $files; do
-    if [ -d "~/.config/$file"]
+    if [ -d "~/.config/$file" ]
     then 
 	    mv ~/.config/$file ~/dotfiles_old/
     fi
