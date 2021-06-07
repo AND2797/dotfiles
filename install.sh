@@ -3,7 +3,6 @@ olddir=~/dotfiles_old
 
 files="nvim"
 echo "Creating $olddir for backup"
-mkdir -p .config
 mkdir -p $olddir
 
 cd $dir
