@@ -46,8 +46,7 @@ nnoremap <C-l> <C-w>l
 "Switching tabs
 nnoremap gt :tabn<cr>
 nnoremap gT :tabp<cr>
-nnoremap gx :tabc<cr>
-nnoremap gX :tabo<cr>
+map gx <Action>(CloseContent)
 
 "Git
 
@@ -64,4 +63,22 @@ map <C-/> <Action>(CommentByLineComment)
 "map <leader>d <Action>(Debug)
 
 "" Map \b to toggle the breakpoint on the current line
-map \b <Action>(ToggleLineBreakpoint)
+map <leader>b <Action>(ToggleLineBreakpoint)
+
+map <leader>fu <Action>(FindUsages)
+map <leader>gi <Action>(GoToImplementation)
+
+nmap <leader>si :action SplitVertically<CR>:action NextSplitter<CR>:action GotoImplementation<CR>
+nmap <leader>hi :action SplitHorizontally<CR>:action NextSplitter<CR>:action GotoImplementation<CR>
+nmap <leader>sd :action SplitVertically<CR>:action NextSplitter<CR>:action GotoDeclaration<CR>
+nmap <leader>hd :action SplitHorizontally<CR>: action NextSplitter<CR>:action GotoDeclaration<CR>
+
+"" rider specific
+nmap <leader>sb :action RebuildSolutionAction<CR>:echo "Rebuilding..."<CR>
+nmap <leader>sc :action CleanSolutionAction<CR>: echo "Clean..."<CR>
+
+nmap <leader>rc :action ChooseRunConfiguration<CR>
+nmap <leader>rd :action Debug<CR>:echo "Debugging..."<CR>
+nmap <leader>rr :action Run<CR>:echo "Running..."<CR>
+nmap <leader>rx :action Stop<CR>:echo "Stopped run/debug"<CR>
+
