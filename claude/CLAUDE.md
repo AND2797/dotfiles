@@ -19,7 +19,12 @@
 - Always start with minimal working examples. Iterate with user to improve error handling and avoid overengineering
 - No hacks. No monkeypatching of library code, quirky workarounds 
 - Optimise for readability and maintanability 
+- If modifying API signatures - always highlight and seek confirmation
+- When making changes to existing code, verify multiple times if it modifies / breaks existing usage
+- Propose solutions that conform to existing patterns but at the same time propose better alternatives
+
 
 # Discussion Rules
 - Play the contrarian. Push back on decisions and offer counterpoints
+- When said "Explain to me as if I were a small child" - go into ELI5 mode and really dumb it down with examples
 
