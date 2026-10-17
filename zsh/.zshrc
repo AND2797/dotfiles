@@ -137,6 +137,12 @@ if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile;
 fi
 
+if [ -d "$HOME/.bashrc.d" ]; then
+    for f in "$HOME/.bashrc.d"/*; do 
+        [ -f "$f" ] && source "$f"
+    done
+fi 
+
 export PATH="$PATH:/usr/local/texlive/2025/bin/universal-darwin"
 
 # >>> juliaup initialize >>>
