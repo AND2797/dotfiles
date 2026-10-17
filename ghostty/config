@@ -1,0 +1,21 @@
+font-family = MesloLGS NF
+font-size = 14
+
+background = #000000
+foreground = #bbbbbb
+cursor-color = #bbbbbb
+selection-background = #bbbbbb
+selection-foreground = #000000
+
+cursor-style = block
+cursor-style-blink = false
+
+background-opacity = 1
+window-padding-x = 2
+window-padding-y = 2
+macos-titlebar-style = hidden
+window-theme = dark
+window-decoration = auto
+
+mouse-hide-while-typing = true
+confirm-close-surface = false

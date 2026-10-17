@@ -1,8 +1,27 @@
 {
-  "model": "claude-fable-5[1m]",
-  "enabledPlugins": {
-    "pyright-lsp@claude-plugins-official": true
+  "model": "opus",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/aditya/miniconda3/bin/python3 /Users/aditya/.claude/hooks/log_prompt_usage.py"
+          }
+        ]
+      }
+    ]
   },
-  "effortLevel": "high",
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true
+  },
+  "effortLevel": "xhigh",
+  "modelSettings": {
+    "claude-sonnet-5": {
+      "effortLevel": "medium"
+    }
+  },
+  "tui": "fullscreen",
   "theme": "dark-daltonized"
 }
