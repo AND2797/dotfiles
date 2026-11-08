@@ -19,10 +19,6 @@ git clone git@github.com:AND2797/dotfiles.git ~/dotfiles && cd ~/dotfiles
 
 anything already there gets moved to `.bak`.
 
-## new tool
-
-new folder, drop config in, copy a link script, change the paths at the bottom.
-
 ## remember
 
 - don't move this folder, links break
