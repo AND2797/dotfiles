@@ -1,17 +1,5 @@
 {
   "model": "opus",
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/aditya/miniconda3/bin/python3 /Users/aditya/.claude/hooks/log_prompt_usage.py"
-          }
-        ]
-      }
-    ]
-  },
   "enabledPlugins": {
     "pyright-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true
