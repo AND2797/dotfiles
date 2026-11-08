@@ -1,6 +1,6 @@
 # dotfiles
 
-## what's linked where
+## symlinks
 
 - `zsh/` → `~/.zshrc` + omz theme
 - `ghostty/` → `~/.config/ghostty/config`
